@@ -1,8 +1,24 @@
 aid: luvocracy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/luvocracy.png
 name: Luvocracy *
-description: 'Luvocracy * is a company surfaced as a portfolio company of gv, kleiner-perkins and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Luvocracy was a social-shopping and recommendation marketplace where people discovered,
+  shared, and bought products curated by friends and trusted tastemakers, with the service handling the
+  purchasing on the buyer''s behalf. Backed by GV (Google Ventures) and Kleiner Perkins, the company was
+  acquired by @WalmartLabs in 2014 and subsequently wound down; its website (luvocracy.com) now serves an
+  archived static page announcing the acquisition. No developer program, public API, or SDK was ever
+  published, and none exists today. This profile is retained as a network record of a defunct consumer
+  startup. Sector: consumer / social commerce.'
 url: https://raw.githubusercontent.com/api-evangelist/luvocracy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-status: defunct
+x-acquired-by: walmartlabs
 tags:
 - Company
 - Consumer
+- Social Commerce
+- Marketplace
+- Shopping
+- Recommendations
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/luvocracy-domain-security.yml
 - type: Website
   url: http://luvocracy.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
